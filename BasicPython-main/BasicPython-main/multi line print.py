@@ -1,0 +1,1 @@
+print("House #123\nStreet #5\nModel Town\nLahore\nPakistan")

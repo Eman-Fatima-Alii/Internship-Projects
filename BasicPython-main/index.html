@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BasicPython Interactive Suite | Modern Python Learning & Runner</title>
+  <meta name="description" content="A modern, interactive developer playground and visual runner for 40+ fundamental Python programming exercises, algorithms, and data structures.">
+  <meta name="theme-color" content="#090d16">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐍</text></svg>">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+      <div class="brand-section" id="brandNav">
+        <div class="brand-logo-badge">🐍</div>
+        <div class="brand-info">
+          <h1>BasicPython Suite</h1>
+          <span class="tagline">Interactive Python Execution & Visualizer</span>
+        </div>
+      </div>
+
+      <!-- Global Search -->
+      <div class="search-wrapper">
+        <span class="search-icon">🔍</span>
+        <input 
+          type="text" 
+          id="globalSearchInput" 
+          class="search-input" 
+          placeholder="Search 40+ exercises, logic, or keywords..." 
+          autocomplete="off"
+        >
+        <button id="searchClearBtn" class="search-clear-btn" title="Clear search">✕</button>
+      </div>
+
+      <!-- Actions & Theme Toggle -->
+      <div class="nav-actions">
+        <span class="stat-pill" id="totalModulesCount">40+ Modules</span>
+        <button id="themeToggleBtn" class="btn-icon" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">☀️</button>
+      </div>
+    </header>
+
+    <!-- Main App Layout -->
+    <div class="main-layout">
+      <!-- Sidebar Explorer -->
+      <aside class="sidebar">
+        <div>
+          <div class="sidebar-section-title">Categories</div>
+          <ul class="category-nav-list" id="categoryNavList">
+            <!-- Populated dynamically by JS -->
+          </ul>
+        </div>
+
+        <div>
+          <div class="sidebar-section-title">Concept Tags</div>
+          <div class="tags-cloud" id="tagCloud">
+            <!-- Populated dynamically by JS -->
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Canvas Area -->
+      <main class="content-area">
+        <!-- Hero Banner -->
+        <section class="hero-banner">
+          <div class="hero-content">
+            <h2>Master Fundamental Python Interactively</h2>
+            <p>
+              Explore 40+ production-grade Python building blocks—from control flow & conditionals to algorithms, data cleaning, and data structures—with real-time parameters, instant visual feedback, and live in-browser Python execution.
+            </p>
+            <div class="quick-stats-row">
+              <div class="stat-item">
+                <span class="stat-value" id="heroTotalCount">42</span>
+                <span class="stat-label">Python Modules</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value" id="totalCategoriesCount">6</span>
+                <span class="stat-label">Curated Domains</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">100%</span>
+                <span class="stat-label">Client-Side & Fast</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Active Module Interactive Playground -->
+        <section class="module-workspace" id="moduleWorkspace">
+          <!-- Module Header -->
+          <div class="workspace-header">
+            <div class="module-meta">
+              <div class="module-icon-large" id="workspaceIcon">💳</div>
+              <div class="module-title-group">
+                <h3 id="workspaceTitle">ATM Mockup</h3>
+                <span class="module-file-badge" id="workspaceFilename">📄 ATM mockup.py</span>
+              </div>
+            </div>
+            <div class="workspace-actions">
+              <span id="wasmStatusPill" class="card-tag" style="font-size: 0.75rem;">⚡ WASM Ready</span>
+            </div>
+          </div>
+
+          <p class="module-description-text" id="workspaceDesc">
+            Simulates an automated teller machine withdrawal by checking available account balance against requested amount.
+          </p>
+
+          <!-- Interactive Workspace Grid -->
+          <div class="workspace-grid">
+            <!-- Left: Interactive Parameters Form -->
+            <div class="controls-card">
+              <div class="controls-header">
+                <h4>⚙️ Interactive Parameters</h4>
+              </div>
+              <form id="inputsForm" class="inputs-form" onsubmit="return false;">
+                <!-- Dynamic form inputs rendered here -->
+              </form>
+              <div class="controls-footer">
+                <button id="btnRunModule" class="btn-primary">
+                  <span>▶</span> Run Logic
+                </button>
+                <button id="btnResetInputs" class="btn-secondary" title="Reset to Defaults">
+                  Reset
+                </button>
+              </div>
+            </div>
+
+            <!-- Right: Tabbed Output Container -->
+            <div class="output-card">
+              <div class="tab-nav">
+                <button class="tab-btn active" data-tab="visual">
+                  <span>🎨</span> Live Visualizer
+                </button>
+                <button class="tab-btn" data-tab="terminal">
+                  <span>💻</span> Python Console
+                </button>
+                <button class="tab-btn" data-tab="code">
+                  <span>📜</span> Source Code
+                </button>
+              </div>
+
+              <!-- Tab 1: Live Visualizer -->
+              <div class="tab-pane active" id="tab-visual">
+                <div class="visual-container" id="visualContainer">
+                  <!-- Custom visualizer rendered here -->
+                </div>
+              </div>
+
+              <!-- Tab 2: Terminal Window -->
+              <div class="tab-pane" id="tab-terminal">
+                <div class="terminal-window">
+                  <div class="terminal-titlebar">
+                    <div class="term-dots">
+                      <span class="term-dot red"></span>
+                      <span class="term-dot yellow"></span>
+                      <span class="term-dot green"></span>
+                    </div>
+                    <span class="terminal-title">bash — python3 terminal</span>
+                    <span style="font-size: 0.7rem; color: #64748b;">stdout</span>
+                  </div>
+                  <div class="terminal-body" id="terminalOutput">
+                    <!-- Standard terminal output stream -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tab 3: Source Code & WASM -->
+              <div class="tab-pane" id="tab-code">
+                <div class="code-inspector-pane">
+                  <div class="code-toolbar">
+                    <span style="font-size: 0.8rem; color: var(--text-muted);">Exact Python Source Code</span>
+                    <div style="display: flex; gap: 0.5rem;">
+                      <button id="btnCopyCode" class="btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">
+                        📋 Copy Code
+                      </button>
+                      <button id="btnRunPythonWasm" class="btn-primary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">
+                        ⚡ Run via Python (Pyodide)
+                      </button>
+                    </div>
+                  </div>
+                  <div class="code-block-wrapper">
+                    <pre><code class="code-block" id="codeDisplay"></code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- All Modules Catalog Section -->
+        <section class="catalog-section">
+          <div class="catalog-header">
+            <h3>Explore All Python Modules</h3>
+          </div>
+          <div class="modules-grid" id="modulesGrid" style="margin-top: 1rem;">
+            <!-- Rendered dynamically -->
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/modules-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
