@@ -449,7 +449,11 @@ if (isProduction && fs.existsSync(distPath)) {
   app.use(vite.middlewares);
 }
 
-app.listen(PORT, () => {
-  console.log(`Weather Hub running at http://localhost:${PORT}`);
-  console.log(GEMINI_API_KEY ? `✅ AI enabled: ${GEMINI_MODEL}` : '⚠️  AI running on local fallback — add GEMINI_API_KEY to .env to enable Gemini.');
+app.listen(PORT, '0.0.0.0', () => { 
+  console.log(`Weather Hub running at http://0.0.0.0:${PORT}`); 
+  console.log(
+    GEMINI_API_KEY
+      ? `✅ AI enabled: ${GEMINI_MODEL}`
+      : '⚠️ AI running on local fallback — add GEMINI_API_KEY to .env to enable Gemini.'
+  ); 
 });
