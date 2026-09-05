@@ -6,11 +6,11 @@ export default defineConfig({
 
   server: {
     host: '0.0.0.0',
-    allowedHosts: true
+    allowedHosts: ['weather-hub-4kos.onrender.com']
   },
 
   preview: {
     host: '0.0.0.0',
-    allowedHosts: true
+    allowedHosts: ['weather-hub-4kos.onrender.com']
   }
 })
