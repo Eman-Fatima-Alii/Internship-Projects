@@ -6,11 +6,11 @@ export default defineConfig({
 
   server: {
     host: '0.0.0.0',
-    allowedHosts: ['bitcoin-web.onrender.com']
+    allowedHosts: ['bitcoin-web-09t4.onrender.com']
   },
 
   preview: {
     host: '0.0.0.0',
-    allowedHosts: ['bitcoin-web.onrender.com']
+    allowedHosts: ['bitcoin-web-09t4.onrender.com']
   }
 })
