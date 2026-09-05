@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Cloud, CloudRain, Sun, Wind, Droplets, Eye, Gauge } from 'lucide-react';
 
-const API_BASE = 'http://localhost:5173/api';
+const API_BASE = '/api';
 
 function App() {
   const [weather, setWeather] = useState(null);
