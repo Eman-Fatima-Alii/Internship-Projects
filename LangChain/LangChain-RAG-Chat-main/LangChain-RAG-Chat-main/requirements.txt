@@ -1,0 +1,23 @@
+# --- Backend Web Framework ---
+flask
+flask-cors
+python-dotenv
+gunicorn
+
+# --- LangChain Core + Integrations ---
+langchain
+langchain-core
+langchain-community
+langchain-google-genai
+langchain-tavily
+langchain-text-splitters
+langchain-classic
+
+# --- External Dependencies & Vector DB ---
+google-generativeai
+faiss-cpu
+tavily-python
+
+# --- Utilities ---
+certifi
+coloredlogs

@@ -1,0 +1,34 @@
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+*.py[cod]
+__pycache__/
+
+# Node / React
+node_modules/
+frontend/node_modules/
+.next/
+dist/
+build/
+.turbo/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Secrets & Environment variables
+.env
+.env.local
+.env.*.local
+*.env
+!*.env.example
+!*.env.local.example
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+logs/
