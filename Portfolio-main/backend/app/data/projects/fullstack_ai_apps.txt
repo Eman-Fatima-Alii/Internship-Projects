@@ -1,0 +1,19 @@
+PROJECT: Full Stack AI Apps
+CREATOR: Eman Fatima
+CATEGORY: Full-Stack Web Development
+REPOSITORY: https://github.com/Eman-Fatima-Alii
+
+OVERVIEW:
+Comprehensive full-stack web applications integrating React frontends with Node.js / Python backend microservices, RESTful API endpoints, database persistence, secure user authentication, and generative AI features.
+
+KEY FEATURES:
+- Modern component-driven React architecture with clean state management
+- REST API layer connecting frontend with asynchronous backend processing
+- Database schemas with MongoDB / PostgreSQL
+- Secure user authentication and rate limiting
+- Real-time generative AI tool integration for dynamic user insights
+
+TECH STACK:
+- Frontend: React.js, Next.js, Tailwind CSS
+- Backend: Node.js, Express.js, Python, REST APIs
+- Database: MongoDB, PostgreSQL

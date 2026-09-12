@@ -1,0 +1,19 @@
+PROJECT: AI Chatbot
+CREATOR: Eman Fatima
+CATEGORY: Artificial Intelligence & LLMs
+REPOSITORY: https://github.com/Eman-Fatima-Alii
+
+OVERVIEW:
+An intelligent conversational AI chatbot powered by OpenAI APIs (GPT-4o) with natural language understanding, contextual conversations, multi-turn memory, and a modern responsive interface.
+
+KEY FEATURES:
+- Natural Language Processing (NLP) with multi-turn conversational context
+- Integration with OpenAI GPT-4o / GPT-3.5 APIs
+- Context retrieval and intelligent agent workflows
+- Fast streaming responses and robust error handling
+- Sleek, modern conversational user interface
+
+TECH STACK:
+- Backend: Python, FastAPI / Flask, OpenAI API, LangChain
+- AI & NLP: GPT-4o, Prompt Engineering, Token Streaming
+- Frontend: React / Vanilla JS, Responsive Chat UI

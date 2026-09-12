@@ -1,0 +1,19 @@
+PROJECT: Portfolio Website
+CREATOR: Eman Fatima
+CATEGORY: UI/UX & Modern Web Technology
+REPOSITORY: https://github.com/Eman-Fatima-Alii
+
+OVERVIEW:
+A modern, responsive personal portfolio website featuring Liquid Glass UI styling, Apple-inspired aesthetics, glassmorphism, interactive 2D HTML5 canvas neural background animation, and fluid micro-interactions.
+
+KEY FEATURES:
+- Liquid Glass UI with dynamic backdrop blur and glowing ambient gradients
+- Interactive Neural Canvas rendering an animated particle network responsive to mouse movements
+- 3D card tilt effects, spotlight glow, dynamic typewriter cycling, and animated stat counters
+- Smooth navigation with active section detection and mobile-responsive drawer
+- 1-click clipboard copy for email and direct WhatsApp integration
+
+TECH STACK:
+- Frontend: HTML5, CSS3, JavaScript (ES6+), React, Tailwind CSS, Canvas API, Framer Motion
+- Design: Glassmorphism, Responsive Grid/Flexbox, Custom Typography
+- Deployment: Vercel / Static Hosting

@@ -1,0 +1,23 @@
+### LinkedIn Profile Summary for Eman Fatima
+
+This document contains key information from my LinkedIn profile to be used as a reliable source for the chatbot's knowledge base.
+
+#### Headline
+Full Stack AI Engineer | AI Systems & LLM Architect | OpenAI, Machine Learning, Python, React, Node.js
+
+#### About Section
+I am Eman Fatima, a Full Stack AI Engineer focused on developing intelligent software powered by Artificial Intelligence and modern web technologies. My expertise includes OpenAI APIs, LLM Applications, Machine Learning, Python Automation, React, JavaScript, Node.js, REST APIs, databases, cloud deployment, and responsive web development.
+
+I enjoy transforming complex ideas into scalable, user-friendly digital products that solve real-world problems with elegance and computational efficiency.
+
+#### Core Competencies
+- Artificial Intelligence: OpenAI API, Prompt Engineering, LLM Applications, Machine Learning, AI Chatbots & Agents
+- Frontend Development: HTML5, CSS3 & Glassmorphism, JavaScript (ES6+), React.js, Next.js, Responsive Design
+- Backend & APIs: Node.js, Express.js, Python Backends (FastAPI/Flask), RESTful APIs, Auth & Database Integration
+- Tools & DevOps: Git & GitHub, VS Code, Postman API Testing, Vercel Deployment, Automation Tooling
+
+#### Contact
+- Email: emaanfatimaa2121@gmail.com
+- LinkedIn: https://www.linkedin.com/in/eman-fatima-34468a356
+- GitHub: https://github.com/Eman-Fatima-Alii
+- WhatsApp: +92 327 0649825

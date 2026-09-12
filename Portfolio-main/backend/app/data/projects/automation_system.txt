@@ -1,0 +1,19 @@
+PROJECT: Automation System
+CREATOR: Eman Fatima
+CATEGORY: Python & Automation Tooling
+REPOSITORY: https://github.com/Eman-Fatima-Alii
+
+OVERVIEW:
+A suite of Python automation solutions designed to eliminate repetitive manual workflows, execute scheduled web scraping and data extraction, generate automated reports, and streamline business processes.
+
+KEY FEATURES:
+- Automated web data extraction and web scraping
+- Scheduled cron-like task runners and data pipeline execution
+- Automated report generation and email dispatch
+- Error handling, logging, and retry mechanisms for high reliability
+- Modular architecture allowing easy addition of custom business tools
+
+TECH STACK:
+- Language: Python 3.10+
+- Libraries: Requests, BeautifulSoup, Pandas, Asyncio, Schedule
+- Storage: PostgreSQL / SQLite, CSV/JSON reporting formats
