@@ -14,11 +14,11 @@
     </linearGradient>
   </defs>
   
-  <!-- Stylized R letter -->
+  <!-- Stylized E letter for Eman Fatima -->
   <path
-    d="M 70 60 L 70 140 M 70 60 L 105 60 C 120 60 130 70 130 85 C 130 100 120 110 105 110 L 70 110 M 100 110 L 130 140"
+    d="M 130 65 L 75 65 L 75 135 L 130 135 M 75 100 L 120 100"
     stroke="#6366F1"
-    stroke-width="10"
+    stroke-width="12"
     stroke-linecap="round"
     stroke-linejoin="round"
     fill="none"

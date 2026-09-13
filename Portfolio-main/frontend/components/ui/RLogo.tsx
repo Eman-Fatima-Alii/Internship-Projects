@@ -80,7 +80,7 @@ export function RLogo({ size = 120, className = "" }: { size?: number; className
                 style={{ transformOrigin: "center" }}
             />
 
-            {/* Gradient definition - darker tones */}
+            {/* Gradient definition - vibrant modern indigo/violet */}
             <defs>
                 <linearGradient id="circleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" stopColor="#4f46e5" stopOpacity="0.5" />
@@ -88,15 +88,15 @@ export function RLogo({ size = 120, className = "" }: { size?: number; className
                     <stop offset="100%" stopColor="#9333ea" stopOpacity="0.5" />
                 </linearGradient>
                 <linearGradient id="letterGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#4f46e5" />
-                    <stop offset="50%" stopColor="#7c3aed" />
-                    <stop offset="100%" stopColor="#9333ea" />
+                    <stop offset="0%" stopColor="#6366f1" />
+                    <stop offset="50%" stopColor="#8b5cf6" />
+                    <stop offset="100%" stopColor="#a855f7" />
                 </linearGradient>
             </defs>
 
-            {/* Stylized R letter with drawing animation */}
+            {/* Stylized E letter for Eman Fatima with drawing animation */}
             <motion.path
-                d="M 70 60 L 70 140 M 70 60 L 105 60 C 120 60 130 70 130 85 C 130 100 120 110 105 110 L 70 110 M 100 110 L 130 140"
+                d="M 130 65 L 75 65 L 75 135 L 130 135 M 75 100 L 120 100"
                 stroke="url(#letterGradient)"
                 strokeWidth="8"
                 strokeLinecap="round"
@@ -112,3 +112,5 @@ export function RLogo({ size = 120, className = "" }: { size?: number; className
         </svg>
     );
 }
+
+export const ELogo = RLogo;

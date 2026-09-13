@@ -58,10 +58,10 @@ export function ProfileHeader() {
                             transform: isFlipped ? "rotateY(180deg)" : "rotateY(0deg)"
                         }}
                     >
-                        {/* Front - Real Photo */}
+                        {/* Front - Eman's Photo */}
                         <div className="absolute inset-0 rounded-full overflow-hidden ring-2 ring-indigo-500/30 ring-offset-2 ring-offset-zinc-900 [backface-visibility:hidden]">
                             <Image
-                                src="/profile.webp"
+                                src="/eman.png"
                                 alt="Eman Fatima"
                                 width={200}
                                 height={200}
@@ -71,17 +71,17 @@ export function ProfileHeader() {
                             />
                         </div>
 
-                        {/* Back - Ghibli Version */}
+                        {/* Back - Eman's AI Portrait */}
                         <div
-                            className="absolute inset-0 rounded-full overflow-hidden ring-2 ring-indigo-500/30 ring-offset-2 ring-offset-zinc-900 [backface-visibility:hidden]"
+                            className="absolute inset-0 rounded-full overflow-hidden ring-2 ring-purple-500/50 ring-offset-2 ring-offset-zinc-900 [backface-visibility:hidden]"
                             style={{ transform: "rotateY(180deg)" }}
                         >
                             <Image
-                                src="/ghibli-developer.webp"
+                                src="/eman.png"
                                 alt="Eman Fatima - AI Twin"
                                 width={200}
                                 height={200}
-                                className="object-cover w-full h-full scale-150 object-top"
+                                className="object-cover w-full h-full brightness-110 contrast-105"
                                 quality={95}
                             />
                         </div>
