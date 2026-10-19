@@ -892,7 +892,7 @@ function App() {
               {unreadNotifications > 0 && <span className="badge">{unreadNotifications}</span>}
             </button>
             <button className="avatar" onClick={() => setModal('profile')}>
-              NQ
+              EF
             </button>
           </div>
         </header>
@@ -1678,9 +1678,9 @@ function App() {
       {modal === 'profile' && (
         <Modal title="Trader Profile" subtitle="Regal Terminal Session" onClose={() => setModal(null)}>
           <div className="profile-card">
-            <div className="profile-avatar">NQ</div>
+            <div className="profile-avatar">EF</div>
             <div>
-              <h4>Muhammad Nouman Qamar</h4>
+              <h4>Eman Fatima</h4>
               <p>Full Stack AI Engineer · Regal Terminal Hub</p>
             </div>
           </div>
