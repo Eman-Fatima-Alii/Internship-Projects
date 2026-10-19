@@ -1,7 +1,7 @@
-# Nouman Qamar Portfolio
+# Eman Fatima Portfolio
 
 A React + Vite + Tailwind CSS v4 portfolio, styled after adhivishnuportfolio.web.app
-(same layout, marquee/ticker animations, light theme) with Muhammad Nouman Qamar's
+(same layout, marquee/ticker animations, light theme) with Eman Fatima's
 own content: projects, skills, and contact info.
 
 ## Sections
